@@ -1,7 +1,7 @@
 # Mini Pipeline de Datos – Fase 1: Python aplicado a Datos
 
 ## Objetivo
-Este proyecto tiene como objetivo construir un **pipeline básico de datos** e **introductorio** usando Python y pandas, aplicando técnicas de limpieza, transformación y filtrado de datos. Es el primer paso práctico en mi formación como **Data Engineer junior**.
+Este proyecto tiene como objetivo construir un **pipelines básicos de datos** e **introductorio** usando Python, pandas, numpy, entre otras librerías, aplicando técnicas de limpieza, transformación y filtrado de datos.
 
 ## Estructura del directorio de carpetas
 
@@ -16,33 +16,43 @@ FASE_1_DATA_ENG/
 ## Archivos generados
 
 ### RAW_DATA
-- `df_raw.csv` → Datos originales sin limpieza.
-- `df_raw.parquet` → Datos originales en formato Parquet.
+Datos originales sin limpieza.
 
 ### CLEAN_DATA
-- `df_completo.csv` → Datos limpios, sin valores nulos y con columna derivada `valor_log`.
-- `df_completo.parquet` → Mismo dataset en formato Parquet.
-- `df_filtrado.csv` → Subconjunto filtrado (valor > 50).
-- `df_filtrado.parquet` → Mismo subconjunto en formato Parquet.
-
-## Pasos realizados
-
-1. **Creación del DataFrame raw**: se cargaron los datos originales sin modificaciones.  
-2. **Exploración de datos**: revisión de información general, estadísticas descriptivas y valores nulos.  
-3. **Limpieza de datos**: se rellenaron valores nulos y se creó una nueva columna `valor_log` aplicando logaritmo.  
-4. **Agrupación por categoría**: cálculo de métricas de interés como la media y el conteo por grupo.  
-5. **Filtrado de filas**: selección de subconjuntos específicos (`valor > 50`).  
-6. **Guardado de archivos**: exportación a CSV y Parquet de todos los DataFrames (`raw`, `limpio` y `filtrado`).
+Datos limpios o trasformados.
 
 ## Herramientas utilizadas
 - **Python** 3
 - **Pandas** y **NumPy**
 - **Matplotlib / Seaborn** (no se realizó por ser un proceso opcional)
 - **JupyterLab** (para la realización de toda la práctica)
+- **requests** Para obtener datos de internet.
+- **logging** Para manejor de información.
 - **PyArrow** (para Parquet)
-- **Git** (control de versiones opcional)
+- **Git**
 
 ## Notas
 - Se mantuvo una copia de los datos raw para asegurar la reproducibilidad.  
 - Los archivos filtrados y limpios se encuentran en `CLEAN_DATA`.  
 - Este proyecto sirve como primer mini-pipeline de datos práctico, listo para ampliar con pipelines ETL más complejos y conectividad con bases de datos.
+
+## Notebook 01: Basico y manipulación de datos
+- Conceptos de listas, diccionarios, sets y tuplas
+- Creación de DataFrames
+- Filtrado y agrupación
+- Guardado en CSV/Parquet
+- [Link al notebook](NOTEBOOKS/01_basico_ejercicio.ipynb)
+
+## Notebook 02: Datos desde internet + logging
+- Descarga de datasets desde URL
+- Manejo de errores y logging
+- Limpieza y columnas derivadas
+- Guardado en CSV/Parquet
+- [Link al notebook](NOTEBOOKS/02_basico_ejercicio_api_logging.ipynb)
+
+## Notebook 03: Filtrado, agrupación y visualización
+- Filtrado de países y casos
+- Agrupación y cálculo de métricas
+- Visualizaciones con Matplotlib y Seaborn
+- Guardado de resultados filtrados
+- [Link al notebook](NOTEBOOKS/03_filtrado_agrupado_visualización_datos_covid.ipynb)
