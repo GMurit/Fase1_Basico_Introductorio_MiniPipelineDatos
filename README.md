@@ -66,4 +66,4 @@ Datos limpios o trasformados.
 - Visualización de totales por producto (gráfico de barras con Matplotlib/Seaborn)
 - Guardado de resultados en CSV/Parquet en CLEAN_DATA
 - Propósito: repaso de conceptos de Python aplicados a datos, consolidación de pipeline básico y comprobación de resultados.
-- [Link al notebook] (NOTEBOOKS/04_repaso01.ipynb)
+- [Link al notebook](NOTEBOOKS/04_repaso01.ipynb)
