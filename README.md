@@ -67,3 +67,12 @@ Datos limpios o trasformados.
 - Guardado de resultados en CSV/Parquet en CLEAN_DATA
 - Propósito: repaso de conceptos de Python aplicados a datos, consolidación de pipeline básico y comprobación de resultados.
 - [Link al notebook](NOTEBOOKS/04_repaso01.ipynb)
+
+## Notebook 05: Extracción de datos desde API
+- Conexión a la API de CoinGecko usando requests
+- Conversión de datos JSON a DataFrame
+- Creación de columnas derivadas (precio en EUR)
+- Filtrado por capitalización de mercado
+- Agregación de datos con groupby y cálculo de precio medio
+- Guardado de resultados en CSV y Parquet
+- Link al notebook: [05_repaso_api.ipynb](NOTEBOOKS/05_repaso_api.ipynb)
