@@ -56,3 +56,14 @@ Datos limpios o trasformados.
 - Visualizaciones con Matplotlib y Seaborn
 - Guardado de resultados filtrados
 - [Link al notebook](NOTEBOOKS/03_filtrado_agrupado_visualización_datos_covid.ipynb)
+
+## Notebook 04: Repaso Python + Mini-pipeline de ventas
+
+- Creación de DataFrame desde lista de diccionarios
+- Limpieza de datos (dropna, reset_index)
+- Columnas derivadas (total)
+- Filtrado y agrupación por producto (groupby, agg)
+- Visualización de totales por producto (gráfico de barras con Matplotlib/Seaborn)
+- Guardado de resultados en CSV/Parquet en CLEAN_DATA
+- Propósito: repaso de conceptos de Python aplicados a datos, consolidación de pipeline básico y comprobación de resultados.
+- [Link al notebook] (NOTEBOOKS/04_repaso01.ipynb)
